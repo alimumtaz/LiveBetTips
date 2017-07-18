@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22EA528E76AA4E11894D472D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EB0E2C7D6245189347CF67 /* libPods.a */; };
+		FF056F4A1960AA6F000986E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F491960AA6E000986E0 /* Foundation.framework */; };
+		FF056F4C1960AA6F000986E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F4B1960AA6F000986E0 /* CoreGraphics.framework */; };
+		FF056F4E1960AA6F000986E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F4D1960AA6F000986E0 /* UIKit.framework */; };
+		FF056F541960AA6F000986E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF056F521960AA6F000986E0 /* InfoPlist.strings */; };
+		FF056F561960AA6F000986E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF056F551960AA6F000986E0 /* main.m */; };
+		FF056F5A1960AA6F000986E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF056F591960AA6F000986E0 /* AppDelegate.m */; };
+		FF056F5D1960AA6F000986E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF056F5B1960AA6F000986E0 /* Main.storyboard */; };
+		FF056F621960AA6F000986E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF056F611960AA6F000986E0 /* Images.xcassets */; };
+		FF056F691960AA6F000986E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F681960AA6F000986E0 /* XCTest.framework */; };
+		FF056F6A1960AA6F000986E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F491960AA6E000986E0 /* Foundation.framework */; };
+		FF056F6B1960AA6F000986E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF056F4D1960AA6F000986E0 /* UIKit.framework */; };
+		FF056F731960AA6F000986E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF056F711960AA6F000986E0 /* InfoPlist.strings */; };
+		FF056F751960AA6F000986E0 /* LiveBetTipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF056F741960AA6F000986E0 /* LiveBetTipsTests.m */; };
+		FF068E0E1971BD2100308F79 /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = FF068E0D1971BD2100308F79 /* Tip.m */; };
+		FF1665F3196842E0000AC897 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1665F2196842E0000AC897 /* User.m */; };
+		FF1F2D25197E9B1400577C67 /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1F2D24197E9B1400577C67 /* menuicon.png */; };
+		FF1F2D2E197EDEC800577C67 /* MyTipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F2D2D197EDEC800577C67 /* MyTipsTableViewController.m */; };
+		FF41954019891110000BDAAA /* FilterPredictionName.m in Sources */ = {isa = PBXBuildFile; fileRef = FF41953F19891110000BDAAA /* FilterPredictionName.m */; };
+		FF4195431989111E000BDAAA /* FilterLeagueType.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4195421989111E000BDAAA /* FilterLeagueType.m */; };
+		FF4195451989760C000BDAAA /* Background_HDPI.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4195441989760C000BDAAA /* Background_HDPI.png */; };
+		FF419547198A211B000BDAAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF419546198A211B000BDAAA /* StoreKit.framework */; };
+		FF419549198A2175000BDAAA /* Logo_XHDPI.png in Resources */ = {isa = PBXBuildFile; fileRef = FF419548198A2175000BDAAA /* Logo_XHDPI.png */; };
+		FF4E16991972BFB10049743B /* TipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4E16981972BFB10049743B /* TipCell.m */; };
+		FF52B4461965EDE000BDD10B /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF52B4451965EDE000BDD10B /* SignupViewController.m */; };
+		FF52B4491965EE2700BDD10B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF52B4481965EE2700BDD10B /* LoginViewController.m */; };
+		FF6E9DA819865AD400CCF543 /* ButTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6E9DA719865AD400CCF543 /* ButTipsViewController.m */; };
+		FF932D6B199D374800E86DF5 /* slideMenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF932D6A199D374800E86DF5 /* slideMenuIcon.png */; };
+		FF973BB8197C399300EF4A2A /* TipDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF973BB7197C399300EF4A2A /* TipDetailViewController.m */; };
+		FF973BBB197C39A000EF4A2A /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF973BBA197C39A000EF4A2A /* ContactUsViewController.m */; };
+		FF973BBE197C412500EF4A2A /* TipDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FF973BBD197C412500EF4A2A /* TipDetail.m */; };
+		FFCEAB73196A815B001FFEE0 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCEAB72196A815B001FFEE0 /* AppConstants.m */; };
+		FFCEAB76196A84A8001FFEE0 /* TipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCEAB75196A84A8001FFEE0 /* TipsTableViewController.m */; };
+		FFE37D1C1980271600227C5D /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE37D1B1980271600227C5D /* ForgotPasswordViewController.m */; };
+		FFE37D1F1980325500227C5D /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE37D1E1980325500227C5D /* FilterViewController.m */; };
+		FFE37D2219803CFE00227C5D /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE37D2119803CFE00227C5D /* Filter.m */; };
+		FFF1251C197931F000CF0DF0 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1251B197931F000CF0DF0 /* MainVC.m */; };
+		FFFA577C1996713500C0FFE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFFA577E1996713500C0FFE9 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF056F6C1960AA6F000986E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF056F3E1960AA6E000986E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF056F451960AA6E000986E0;
+			remoteInfo = LiveBetTips;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10EB0E2C7D6245189347CF67 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B263AD53714924841B505F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		FF056F461960AA6E000986E0 /* LiveBetTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveBetTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF056F491960AA6E000986E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF056F4B1960AA6F000986E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF056F4D1960AA6F000986E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF056F511960AA6F000986E0 /* LiveBetTips-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveBetTips-Info.plist"; sourceTree = "<group>"; };
+		FF056F531960AA6F000986E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF056F551960AA6F000986E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF056F571960AA6F000986E0 /* LiveBetTips-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveBetTips-Prefix.pch"; sourceTree = "<group>"; };
+		FF056F581960AA6F000986E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF056F591960AA6F000986E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF056F5C1960AA6F000986E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF056F611960AA6F000986E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF056F671960AA6F000986E0 /* LiveBetTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveBetTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF056F681960AA6F000986E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF056F701960AA6F000986E0 /* LiveBetTipsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveBetTipsTests-Info.plist"; sourceTree = "<group>"; };
+		FF056F721960AA6F000986E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF056F741960AA6F000986E0 /* LiveBetTipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveBetTipsTests.m; sourceTree = "<group>"; };
+		FF068E0C1971BD2100308F79 /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
+		FF068E0D1971BD2100308F79 /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
+		FF1665F1196842E0000AC897 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FF1665F2196842E0000AC897 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FF1F2D24197E9B1400577C67 /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
+		FF1F2D2C197EDEC800577C67 /* MyTipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTipsTableViewController.h; sourceTree = "<group>"; };
+		FF1F2D2D197EDEC800577C67 /* MyTipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTipsTableViewController.m; sourceTree = "<group>"; };
+		FF41953E19891110000BDAAA /* FilterPredictionName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPredictionName.h; sourceTree = "<group>"; };
+		FF41953F19891110000BDAAA /* FilterPredictionName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPredictionName.m; sourceTree = "<group>"; };
+		FF4195411989111E000BDAAA /* FilterLeagueType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterLeagueType.h; path = ../FilterLeagueType.h; sourceTree = "<group>"; };
+		FF4195421989111E000BDAAA /* FilterLeagueType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterLeagueType.m; path = ../FilterLeagueType.m; sourceTree = "<group>"; };
+		FF4195441989760C000BDAAA /* Background_HDPI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_HDPI.png; sourceTree = "<group>"; };
+		FF419546198A211B000BDAAA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FF419548198A2175000BDAAA /* Logo_XHDPI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_XHDPI.png; sourceTree = "<group>"; };
+		FF4E16971972BFB10049743B /* TipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCell.h; sourceTree = "<group>"; };
+		FF4E16981972BFB10049743B /* TipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCell.m; sourceTree = "<group>"; };
+		FF52B4441965EDE000BDD10B /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		FF52B4451965EDE000BDD10B /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		FF52B4471965EE2700BDD10B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FF52B4481965EE2700BDD10B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FF6E9DA619865AD400CCF543 /* ButTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButTipsViewController.h; sourceTree = "<group>"; };
+		FF6E9DA719865AD400CCF543 /* ButTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButTipsViewController.m; sourceTree = "<group>"; };
+		FF932D6A199D374800E86DF5 /* slideMenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slideMenuIcon.png; sourceTree = "<group>"; };
+		FF973BB6197C399300EF4A2A /* TipDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipDetailViewController.h; sourceTree = "<group>"; };
+		FF973BB7197C399300EF4A2A /* TipDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipDetailViewController.m; sourceTree = "<group>"; };
+		FF973BB9197C39A000EF4A2A /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		FF973BBA197C39A000EF4A2A /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		FF973BBC197C412500EF4A2A /* TipDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipDetail.h; sourceTree = "<group>"; };
+		FF973BBD197C412500EF4A2A /* TipDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipDetail.m; sourceTree = "<group>"; };
+		FFCEAB71196A815B001FFEE0 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		FFCEAB72196A815B001FFEE0 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		FFCEAB74196A84A8001FFEE0 /* TipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewController.h; sourceTree = "<group>"; };
+		FFCEAB75196A84A8001FFEE0 /* TipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsTableViewController.m; sourceTree = "<group>"; };
+		FFE37D1A1980271600227C5D /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		FFE37D1B1980271600227C5D /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		FFE37D1D1980325500227C5D /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		FFE37D1E1980325500227C5D /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		FFE37D2019803CFE00227C5D /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		FFE37D2119803CFE00227C5D /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		FFF1251A197931F000CF0DF0 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		FFF1251B197931F000CF0DF0 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		FFFA5779199670EE00C0FFE9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		FFFA577A199670EE00C0FFE9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA577B199670EE00C0FFE9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA577D1996713500C0FFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFFA577F1996716000C0FFE9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFFA5780199675B300C0FFE9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		FFFA5781199675B300C0FFE9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA5782199675B300C0FFE9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFFA5783199675B300C0FFE9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA5784199679E600C0FFE9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		FFFA5785199679E600C0FFE9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA5786199679E600C0FFE9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFFA5787199679E600C0FFE9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA5788199679EF00C0FFE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		FFFA5789199679EF00C0FFE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFFA578A199679EF00C0FFE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFFA578B199679EF00C0FFE9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF056F431960AA6E000986E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF056F4C1960AA6F000986E0 /* CoreGraphics.framework in Frameworks */,
+				FF056F4E1960AA6F000986E0 /* UIKit.framework in Frameworks */,
+				FF419547198A211B000BDAAA /* StoreKit.framework in Frameworks */,
+				FF056F4A1960AA6F000986E0 /* Foundation.framework in Frameworks */,
+				22EA528E76AA4E11894D472D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF056F641960AA6F000986E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF056F691960AA6F000986E0 /* XCTest.framework in Frameworks */,
+				FF056F6B1960AA6F000986E0 /* UIKit.framework in Frameworks */,
+				FF056F6A1960AA6F000986E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF056F3D1960AA6E000986E0 = {
+			isa = PBXGroup;
+			children = (
+				FF056F4F1960AA6F000986E0 /* LiveBetTips */,
+				FF056F6E1960AA6F000986E0 /* LiveBetTipsTests */,
+				FF056F481960AA6E000986E0 /* Frameworks */,
+				FF056F471960AA6E000986E0 /* Products */,
+				64B263AD53714924841B505F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FF056F471960AA6E000986E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF056F461960AA6E000986E0 /* LiveBetTips.app */,
+				FF056F671960AA6F000986E0 /* LiveBetTipsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF056F481960AA6E000986E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF419546198A211B000BDAAA /* StoreKit.framework */,
+				FF056F491960AA6E000986E0 /* Foundation.framework */,
+				FF056F4B1960AA6F000986E0 /* CoreGraphics.framework */,
+				FF056F4D1960AA6F000986E0 /* UIKit.framework */,
+				FF056F681960AA6F000986E0 /* XCTest.framework */,
+				10EB0E2C7D6245189347CF67 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF056F4F1960AA6F000986E0 /* LiveBetTips */ = {
+			isa = PBXGroup;
+			children = (
+				FF4195411989111E000BDAAA /* FilterLeagueType.h */,
+				FF4195421989111E000BDAAA /* FilterLeagueType.m */,
+				FF056F581960AA6F000986E0 /* AppDelegate.h */,
+				FF056F591960AA6F000986E0 /* AppDelegate.m */,
+				FF056F5B1960AA6F000986E0 /* Main.storyboard */,
+				FF056F611960AA6F000986E0 /* Images.xcassets */,
+				FF056F501960AA6F000986E0 /* Supporting Files */,
+				FF52B4441965EDE000BDD10B /* SignupViewController.h */,
+				FF52B4451965EDE000BDD10B /* SignupViewController.m */,
+				FF52B4471965EE2700BDD10B /* LoginViewController.h */,
+				FF52B4481965EE2700BDD10B /* LoginViewController.m */,
+				FF1665F1196842E0000AC897 /* User.h */,
+				FF1665F2196842E0000AC897 /* User.m */,
+				FFCEAB71196A815B001FFEE0 /* AppConstants.h */,
+				FFCEAB72196A815B001FFEE0 /* AppConstants.m */,
+				FFCEAB74196A84A8001FFEE0 /* TipsTableViewController.h */,
+				FFCEAB75196A84A8001FFEE0 /* TipsTableViewController.m */,
+				FF068E0C1971BD2100308F79 /* Tip.h */,
+				FF068E0D1971BD2100308F79 /* Tip.m */,
+				FF4E16971972BFB10049743B /* TipCell.h */,
+				FF4E16981972BFB10049743B /* TipCell.m */,
+				FFF1251A197931F000CF0DF0 /* MainVC.h */,
+				FFF1251B197931F000CF0DF0 /* MainVC.m */,
+				FF973BB6197C399300EF4A2A /* TipDetailViewController.h */,
+				FF973BB7197C399300EF4A2A /* TipDetailViewController.m */,
+				FF973BB9197C39A000EF4A2A /* ContactUsViewController.h */,
+				FF973BBA197C39A000EF4A2A /* ContactUsViewController.m */,
+				FF973BBC197C412500EF4A2A /* TipDetail.h */,
+				FF973BBD197C412500EF4A2A /* TipDetail.m */,
+				FF1F2D2C197EDEC800577C67 /* MyTipsTableViewController.h */,
+				FF1F2D2D197EDEC800577C67 /* MyTipsTableViewController.m */,
+				FFE37D1A1980271600227C5D /* ForgotPasswordViewController.h */,
+				FFE37D1B1980271600227C5D /* ForgotPasswordViewController.m */,
+				FFE37D1D1980325500227C5D /* FilterViewController.h */,
+				FFE37D1E1980325500227C5D /* FilterViewController.m */,
+				FFE37D2019803CFE00227C5D /* Filter.h */,
+				FFE37D2119803CFE00227C5D /* Filter.m */,
+				FF6E9DA619865AD400CCF543 /* ButTipsViewController.h */,
+				FF6E9DA719865AD400CCF543 /* ButTipsViewController.m */,
+				FF41953E19891110000BDAAA /* FilterPredictionName.h */,
+				FF41953F19891110000BDAAA /* FilterPredictionName.m */,
+				FFFA577E1996713500C0FFE9 /* Localizable.strings */,
+			);
+			path = LiveBetTips;
+			sourceTree = "<group>";
+		};
+		FF056F501960AA6F000986E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF932D6A199D374800E86DF5 /* slideMenuIcon.png */,
+				FF419548198A2175000BDAAA /* Logo_XHDPI.png */,
+				FF4195441989760C000BDAAA /* Background_HDPI.png */,
+				FF1F2D24197E9B1400577C67 /* menuicon.png */,
+				FF056F511960AA6F000986E0 /* LiveBetTips-Info.plist */,
+				FF056F521960AA6F000986E0 /* InfoPlist.strings */,
+				FF056F551960AA6F000986E0 /* main.m */,
+				FF056F571960AA6F000986E0 /* LiveBetTips-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF056F6E1960AA6F000986E0 /* LiveBetTipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF056F741960AA6F000986E0 /* LiveBetTipsTests.m */,
+				FF056F6F1960AA6F000986E0 /* Supporting Files */,
+			);
+			path = LiveBetTipsTests;
+			sourceTree = "<group>";
+		};
+		FF056F6F1960AA6F000986E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF056F701960AA6F000986E0 /* LiveBetTipsTests-Info.plist */,
+				FF056F711960AA6F000986E0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF056F451960AA6E000986E0 /* LiveBetTips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF056F781960AA6F000986E0 /* Build configuration list for PBXNativeTarget "LiveBetTips" */;
+			buildPhases = (
+				C6EE6D3C03EE449C8197F471 /* Check Pods Manifest.lock */,
+				FF056F421960AA6E000986E0 /* Sources */,
+				FF056F431960AA6E000986E0 /* Frameworks */,
+				FF056F441960AA6E000986E0 /* Resources */,
+				33BF629D4FAC465398FBD098 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveBetTips;
+			productName = LiveBetTips;
+			productReference = FF056F461960AA6E000986E0 /* LiveBetTips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF056F661960AA6F000986E0 /* LiveBetTipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF056F7B1960AA6F000986E0 /* Build configuration list for PBXNativeTarget "LiveBetTipsTests" */;
+			buildPhases = (
+				FF056F631960AA6F000986E0 /* Sources */,
+				FF056F641960AA6F000986E0 /* Frameworks */,
+				FF056F651960AA6F000986E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF056F6D1960AA6F000986E0 /* PBXTargetDependency */,
+			);
+			name = LiveBetTipsTests;
+			productName = LiveBetTipsTests;
+			productReference = FF056F671960AA6F000986E0 /* LiveBetTipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF056F3E1960AA6E000986E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ishan Khanna";
+				TargetAttributes = {
+					FF056F451960AA6E000986E0 = {
+						DevelopmentTeam = A2JAKN8J4Z;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					FF056F661960AA6F000986E0 = {
+						TestTargetID = FF056F451960AA6E000986E0;
+					};
+				};
+			};
+			buildConfigurationList = FF056F411960AA6E000986E0 /* Build configuration list for PBXProject "LiveBetTips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				it,
+				fr,
+				de,
+			);
+			mainGroup = FF056F3D1960AA6E000986E0;
+			productRefGroup = FF056F471960AA6E000986E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF056F451960AA6E000986E0 /* LiveBetTips */,
+				FF056F661960AA6F000986E0 /* LiveBetTipsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF056F441960AA6E000986E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF419549198A2175000BDAAA /* Logo_XHDPI.png in Resources */,
+				FF1F2D25197E9B1400577C67 /* menuicon.png in Resources */,
+				FF056F621960AA6F000986E0 /* Images.xcassets in Resources */,
+				FF932D6B199D374800E86DF5 /* slideMenuIcon.png in Resources */,
+				FFFA577C1996713500C0FFE9 /* Localizable.strings in Resources */,
+				FF056F541960AA6F000986E0 /* InfoPlist.strings in Resources */,
+				FF056F5D1960AA6F000986E0 /* Main.storyboard in Resources */,
+				FF4195451989760C000BDAAA /* Background_HDPI.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF056F651960AA6F000986E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF056F731960AA6F000986E0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33BF629D4FAC465398FBD098 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EE6D3C03EE449C8197F471 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF056F421960AA6E000986E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4195431989111E000BDAAA /* FilterLeagueType.m in Sources */,
+				FF056F5A1960AA6F000986E0 /* AppDelegate.m in Sources */,
+				FF973BB8197C399300EF4A2A /* TipDetailViewController.m in Sources */,
+				FFF1251C197931F000CF0DF0 /* MainVC.m in Sources */,
+				FFE37D1C1980271600227C5D /* ForgotPasswordViewController.m in Sources */,
+				FF6E9DA819865AD400CCF543 /* ButTipsViewController.m in Sources */,
+				FF1F2D2E197EDEC800577C67 /* MyTipsTableViewController.m in Sources */,
+				FF41954019891110000BDAAA /* FilterPredictionName.m in Sources */,
+				FF973BBB197C39A000EF4A2A /* ContactUsViewController.m in Sources */,
+				FFE37D2219803CFE00227C5D /* Filter.m in Sources */,
+				FFE37D1F1980325500227C5D /* FilterViewController.m in Sources */,
+				FFCEAB73196A815B001FFEE0 /* AppConstants.m in Sources */,
+				FFCEAB76196A84A8001FFEE0 /* TipsTableViewController.m in Sources */,
+				FF1665F3196842E0000AC897 /* User.m in Sources */,
+				FF4E16991972BFB10049743B /* TipCell.m in Sources */,
+				FF52B4461965EDE000BDD10B /* SignupViewController.m in Sources */,
+				FF068E0E1971BD2100308F79 /* Tip.m in Sources */,
+				FF056F561960AA6F000986E0 /* main.m in Sources */,
+				FF52B4491965EE2700BDD10B /* LoginViewController.m in Sources */,
+				FF973BBE197C412500EF4A2A /* TipDetail.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF056F631960AA6F000986E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF056F751960AA6F000986E0 /* LiveBetTipsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF056F6D1960AA6F000986E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF056F451960AA6E000986E0 /* LiveBetTips */;
+			targetProxy = FF056F6C1960AA6F000986E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF056F521960AA6F000986E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF056F531960AA6F000986E0 /* en */,
+				FFFA577A199670EE00C0FFE9 /* es */,
+				FFFA5781199675B300C0FFE9 /* it */,
+				FFFA5785199679E600C0FFE9 /* fr */,
+				FFFA5789199679EF00C0FFE9 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF056F5B1960AA6F000986E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF056F5C1960AA6F000986E0 /* Base */,
+				FFFA5779199670EE00C0FFE9 /* es */,
+				FFFA5780199675B300C0FFE9 /* it */,
+				FFFA5784199679E600C0FFE9 /* fr */,
+				FFFA5788199679EF00C0FFE9 /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF056F711960AA6F000986E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF056F721960AA6F000986E0 /* en */,
+				FFFA577B199670EE00C0FFE9 /* es */,
+				FFFA5783199675B300C0FFE9 /* it */,
+				FFFA5787199679E600C0FFE9 /* fr */,
+				FFFA578B199679EF00C0FFE9 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFFA577E1996713500C0FFE9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFFA577D1996713500C0FFE9 /* en */,
+				FFFA577F1996716000C0FFE9 /* es */,
+				FFFA5782199675B300C0FFE9 /* it */,
+				FFFA5786199679E600C0FFE9 /* fr */,
+				FFFA578A199679EF00C0FFE9 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF056F761960AA6F000986E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF056F771960AA6F000986E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF056F791960AA6F000986E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B263AD53714924841B505F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Sarmas (5RXL7VDNT9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Sarmas (5RXL7VDNT9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "LiveBetTips/LiveBetTips-Prefix.pch";
+				INFOPLIST_FILE = "LiveBetTips/LiveBetTips-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "378924b2-1a5b-471f-8b0c-6f1c1081e126";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF056F7A1960AA6F000986E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B263AD53714924841B505F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Sarmas (5RXL7VDNT9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Sarmas (5RXL7VDNT9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "LiveBetTips/LiveBetTips-Prefix.pch";
+				INFOPLIST_FILE = "LiveBetTips/LiveBetTips-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "378924b2-1a5b-471f-8b0c-6f1c1081e126";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF056F7C1960AA6F000986E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveBetTips.app/LiveBetTips";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveBetTips/LiveBetTips-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LiveBetTipsTests/LiveBetTipsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF056F7D1960AA6F000986E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiveBetTips.app/LiveBetTips";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiveBetTips/LiveBetTips-Prefix.pch";
+				INFOPLIST_FILE = "LiveBetTipsTests/LiveBetTipsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF056F411960AA6E000986E0 /* Build configuration list for PBXProject "LiveBetTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF056F761960AA6F000986E0 /* Debug */,
+				FF056F771960AA6F000986E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF056F781960AA6F000986E0 /* Build configuration list for PBXNativeTarget "LiveBetTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF056F791960AA6F000986E0 /* Debug */,
+				FF056F7A1960AA6F000986E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF056F7B1960AA6F000986E0 /* Build configuration list for PBXNativeTarget "LiveBetTipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF056F7C1960AA6F000986E0 /* Debug */,
+				FF056F7D1960AA6F000986E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF056F3E1960AA6E000986E0 /* Project object */;
+}
